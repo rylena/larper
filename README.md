@@ -1,4 +1,4 @@
-# Role Prompt Skill
+# Larper
 
 Turn plain user requests into stronger, task-specific role prompts.
 
@@ -22,8 +22,8 @@ The goal is not to make the model magically smarter. The goal is to give the mod
 ## Project layout
 
 - `skill/role-prompting/SKILL.md` — Hermes skill definition
-- `src/role_prompt_skill/transformer.py` — prompt transformation logic
-- `src/role_prompt_skill/cli.py` — command-line interface
+- `src/larper/transformer.py` — prompt transformation logic
+- `src/larper/cli.py` — command-line interface
 - `tests/test_transformer.py` — automated tests
 - `examples/prompts.md` — example prompt conversions
 
@@ -40,7 +40,7 @@ pip install -e .
 ### Python
 
 ```python
-from role_prompt_skill.transformer import transform_prompt
+from larper.transformer import transform_prompt
 
 print(transform_prompt("build me a website about hot dogs"))
 ```
@@ -48,13 +48,13 @@ print(transform_prompt("build me a website about hot dogs"))
 ### CLI
 
 ```bash
-python -m role_prompt_skill.cli "build me a website about hot dogs"
+python -m larper.cli "build me a website about hot dogs"
 ```
 
 Or JSON output:
 
 ```bash
-python -m role_prompt_skill.cli --json "write me a spooky bedtime story about a lighthouse"
+python -m larper.cli --json "write me a spooky bedtime story about a lighthouse"
 ```
 
 ## Test

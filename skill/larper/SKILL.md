@@ -1,5 +1,5 @@
 ---
-name: role-prompting
+name: larper
 description: Rewrite plain user requests into stronger task-specific role prompts before solving them.
 version: 1.0.0
 author: Hermes Agent
@@ -9,7 +9,7 @@ metadata:
     tags: [prompting, role-prompts, writing, web-development, analysis]
 ---
 
-# Role Prompting Skill
+# Larper Skill
 
 Use this skill when the user gives a plain task request and you want to rewrite it into a stronger role-based prompt before solving it.
 

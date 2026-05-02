@@ -1,4 +1,4 @@
-from role_prompt_skill.transformer import classify_task, transform_prompt
+from larper.transformer import classify_task, transform_prompt
 
 
 def test_classifies_web_dev_prompt():

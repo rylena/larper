@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "role-prompt-skill"
+name = "larper"
 version = "0.1.0"
-description = "Convert plain user requests into stronger task-specific role prompts."
+description = "Convert plain user requests into stronger task-specific role prompts using the Larper approach."
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{name = "Hermes Agent"}]
@@ -15,7 +15,7 @@ dependencies = []
 dev = ["pytest>=8.0"]
 
 [project.scripts]
-role-prompt-skill = "role_prompt_skill.cli:main"
+larper = "larper.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
