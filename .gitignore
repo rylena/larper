@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+src/*.egg-info/
+src/role_prompt_skill.egg-info/
